@@ -4,13 +4,13 @@ https://github.com/udacity/asteroids 에 들어가 해당 리포지토리를 로
 
 ## 버그를 유발한 커밋 찾기
 
-asteroids를 실행하면 우주선과 소행성이 나타납니다. 키보드에서 ←와 →를 누르면 우주선이 가리키는 방향이 바뀌고, ↑를 누르면 우주선이 전진합니다. 스페이스 바를 누르면 로켓이 발사되죠. 
+asteroids를 실행하면 우주선과 소행성이 나타납니다. 키보드에서 ←와 →를 누르면 우주선이 가리키는 방향이 바뀌고, ↑를 누르면 우주선이 전진합니다. 스페이스 바를 누르면 로켓이 발사되죠.
 
 index.html 파일을 열고 게임을 직접 실행해 봅시다.
 
 ![asteroids-intro](../resources/asteroids-intro.png)
 
-엇! 그런데 에러가 있네요. 스페이스 바에서 손을 떼지 않고 계속 눌러봅시다. 쉼 없이 총알이 발사됩니다. 
+엇! 그런데 에러가 있네요. 스페이스 바에서 손을 떼지 않고 계속 눌러봅시다. 쉼 없이 총알이 발사됩니다.
 
 ![asteroids-bug](../resources/asteroids-bug.png)
 
@@ -18,9 +18,13 @@ index.html 파일을 열고 게임을 직접 실행해 봅시다.
 
 어떤 커밋때문에 버그가 생겼는지 찾아봅시다. 그리고 버그를 수정하려면 어떻게 해야 하는지 적어봅시다.
 
-### 정답
+### 커밋 25ede83 "a couple missing ends with the ipad version"에서 버그 발생
+if (this.delayBeforeBullet <= 0) { 다음에
+ this.delayBeforeBullet = 10; 구문의 누락으로 인해 버그 발생. 구문 다시 추가
 
-(여기에 버그를 유발한 커밋의 id와 어떻게 하면 버그를 수정할 수 있는지 적어주세요.)
+
+수정 후 푸시 파일 주소
+https://github.com/Reinavly/asteroids
 
 ### 힌트
 
